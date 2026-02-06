@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-primary: "Josefin Sans";
+  --color-primary: #5b21b6;
+  --color-dark: #4c1d95;
+  --color-lighter: #f5f3ff;
+  --color-light: #ddd6fe;
+  --color-normalbg: #f3f4f6;
+  --color-darkbg: #1e2939;
+  --animate-shimmer: shimmer 1.5s infinite linear;
+  /* shadow */
+  --shadow-s: inset 0 1px 2px rgba(255, 255, 255, 0.18),
+    0 1px 2px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-m: inset 0 1px 2px rgba(255, 255, 255, 0.31),
+    0 2px 4px rgba(0, 0, 0, 0.18), 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-l: inset 0 1px 2px rgba(255, 255, 255, 0.44),
+    0 4px 6px rgba(0, 0, 0, 0.18), 0 6px 10px rgba(0, 0, 0, 0.08);
+  /* Depth / inverse shadows */
+  --shadow-depth-s: inset 0 1px 2px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(255, 255, 255, 0.16), inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  --shadow-depth-m: inset 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(255, 255, 255, 0.16), inset 0 2px 2px rgba(0, 0, 0, 0.08);
+  --shadow-depth-l: inset 0 4px 6px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(255, 255, 255, 0.16), inset 0 3px 3px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.shadow-depth-s {
+  box-shadow: var(--shadow-depth-s);
+}
+.shadow-depth-m {
+  box-shadow: var(--shadow-depth-m);
+}
+.shadow-depth-l {
+  box-shadow: var(--shadow-depth-l);
+}
