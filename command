@@ -12,4 +12,4 @@ export HIBERNATE_FORMAT_SQL=false
 export STRIPE_API_KEY=sk_test_51SsWlVDrNJEHhbLp80a00t7U2xuEOJRlRFh0jrbiFxS5cpbdrQt4oicoiSB2Q5gA2Pj6MgAL1kTpGkExwUjboeLL00nIa5T2pi
 export CONTACT_PHONE=+989380546332
 export CONTACT_EMAIL=hussein_khanjani@hotmail.com
-export CONTACT_ADDRESS=Iran, Karaj, Fardis, Esteghlal Square, Street 26, Number 16
+export CONTACT_ADDRESS=Iran Karaj Fardis Esteghlal Square
