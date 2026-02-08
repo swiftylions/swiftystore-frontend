@@ -4,7 +4,7 @@ import { useCart } from "../store/cart-context";
 export default function QuantityInput({ productId, quantity }) {
   const { cart, addToCart } = useCart();
 
-  // بروزرسانی مقدار امن
+
   const updateQuantity = (newQuantity) => {
     const safeQuantity = Math.max(1, newQuantity || 1);
     const product = cart.find((item) => item.productId === productId);
@@ -21,7 +21,6 @@ export default function QuantityInput({ productId, quantity }) {
   };
 
   const handleKeyDown = (e) => {
-    // جلوگیری از ورود e/E/+/-
     if (["e", "E", "+", "-"].includes(e.key)) e.preventDefault();
   };
 

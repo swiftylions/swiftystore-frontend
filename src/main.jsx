@@ -35,15 +35,13 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import OrderSuccess from "./components/OrderSuccess.jsx";
 import ProductSubmit, {
-  createProductAction, // ← اضافه شد
+  createProductAction,
   updateProductAction,
 } from "./components/admin/ProductSubmit.jsx";
 import store from "./store/store.js";
 import { Provider } from "react-redux";
 
-const stripePromise = loadStripe(
-  "pk_test_51SsWlVDrNJEHhbLpSECPOF3ivipG5urwuZcdknJsv9OiRQC1eervEb9B2wjZVGIRPwMngh5VQHkcneMcYcEJV13z00xkSrrW9Y"
-);
+const stripePromise = loadStripe(`${import.meta.env.STRIPE_PUBLISHMENT_KEY}`);
 
 const routeDefenitions = createRoutesFromElements(
   <Route path="/" element={<App />} errorElement={<ErrorPage />}>
