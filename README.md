@@ -1,6 +1,4 @@
 # 🦁 SwiftyStore Front-end Application
-
-### Created by Hussein Khanjani (Swifty Lions)
 ---
 
 ![License](https://img.shields.io/github/license/swiftylions/swiftystore-frontend?style=for-the-badge&color=blue)
